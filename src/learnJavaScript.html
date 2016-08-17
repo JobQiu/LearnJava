@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>this is a website used to learn java script</title>
+    <style>
+        body {
+        margin: 0
+        }
+    </style>
+    <script src="./js/test.js"></script>
+    <script>
+
+
+
+    function changeSentence(){
+    x=document.getElementById("abc"); // 找到元素
+    x.innerHTML="Hello JavaScript!"; // 改变内容
+    }
+
+
+
+
+
+
+
+
+    </script>
+    <script>
+    function test(){
+    alert('這是測試位於html內的函數');}
+
+
+
+
+    </script>
+</head>
+<body>
+<hr>
+<h3>this part is uesd to test the docunment create element</h3>
+<button onclick="showSentence()" >when this button is clicked, we will build a text </button>
+<span id="inputASentence"></span>
+
+<hr>
+<h3>this part is used to test the getElementsby name</h3>
+<input type="checkbox" value="basketball" name="hobby"/> basketball
+<input type="checkbox" value="football" name="hobby"/>football
+<input type="checkbox" value="volleyball" name="hobby"/>volleyball
+<input type="checkbox" value="pingpong" name="hobby"/>pingpong
+
+<button onclick="showChoiceSelected()"> 这个button 会alert选中的checkbox</button>
+<hr>
+
+
+username:<input id="username" type="text"/>
+
+password:<input id="password" type="password" onkeypress="enterToShow()"/>
+
+
+
+<button type="button" onclick="alert('Welcome!')">点击这里</button>
+<input type="button"
+       onclick="alert('this is the second reaction to button event.')"
+       value="click me"/>
+<br>
+<hr>
+
+<button onclick="javascript:alert('you have clicked the buttons');"></button>
+<a href="learnJavaScript.html">link</a>
+<button onclick="javascript:history.go(-1);">this button use
+    history,go(-1) to return to the last page
+</button>
+<a href="javascript:void(0)"
+   onclick="javascript:alert('you have been cheated');">www.baidu.com</a>
+
+
+<button onclick="test()">這是測試位於html內的函數</button>
+<button onclick="test2()">這是測試位於js文件裏面的函數</button>
+<br>
+<hr>
+<a href="test_01.html">a website for fun</a>
+<hr>
+	<span id="abc">this is used to test a function to change a
+		sentence</span>
+
+<br> 請無視上面的內容！
+<hr>
+<input type="text" id="num1"/>
+<select id="select">
+    <option value="1">+</option>
+    <option value="2">-</option>
+    <option value="3">*</option>
+    <option value="4">/</option>
+</select>
+<input type="text" id="num2"/>=
+<span id="result"></span>
+<br>
+<button onclick="operation() ">calculate</button>
+<span id="show"></span>
+<hr>
+時鐘
+<span id="time"></span>
+<hr>
+驗證碼
+<br>
+<br> 請輸入手機號
+<input id="phone" type="text"/>
+<button id="counti" onclick="countDown()">獲取驗證碼</button>
+<button id="counti2" onclick="judgePhoneNumber()">is it a phone number?</button>
+
+<span></span>
+<hr>
+<h3>onchange 事件</h3>
+<input type="text" id="change" onchange="alert('此弹窗用于测试onChange事件')"/>
+<hr>
+<h3>onselect 事件 select on character is also ok!</h3>
+<input type="text" id="selectss" onselect="alert('此弹窗用于测试onSelect事件')"/>
+<hr>
+<h3>on mouse over event </h3>
+<input type="button" onmouseover="alert('this is used to test on mouse over')"/>
+
+
+</body>
+</html>
